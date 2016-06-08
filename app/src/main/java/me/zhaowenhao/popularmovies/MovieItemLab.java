@@ -34,6 +34,15 @@ public class MovieItemLab {
         return sMovieItemLab;
     }
 
+    public MovieItem getMovieById (String id){
+        for (MovieItem m: mMovieItems){
+            if (m.getId().equals(id)){
+                return m;
+            }
+        }
+        return null;
+    }
+
     public ArrayList<MovieItem> getMovieItemsFromJSONString(String jsonString){
         try{
             JSONObject json = new JSONObject(jsonString);
@@ -58,4 +67,6 @@ public class MovieItemLab {
     public ArrayList<MovieItem> getMovieItems(){
         return mMovieItems;
     }
+
+
 }

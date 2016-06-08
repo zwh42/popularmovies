@@ -17,9 +17,8 @@ import java.util.ArrayList;
 public class MovieDBFetcher {
     public static final String TAG = "MovieDBFetcher";
 
-    //API example http://api.themoviedb.org/3/movie/popular?api_key=2e354a6ce58d8c694f093f4ceb54fb9b
     private static final String BASE_URL = "http://api.themoviedb.org/3/movie";
-    private static final String API_KEY = "2e354a6ce58d8c694f093f4ceb54fb9b";
+    private static final String API_KEY = PrivateConfig.API_KEY;
     private static final String POPULAR = "popular";
 
     byte[] getUrlBytes(String urlString) throws IOException {

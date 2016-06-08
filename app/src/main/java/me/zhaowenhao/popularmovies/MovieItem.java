@@ -74,4 +74,5 @@ public class MovieItem {
     public String getReleaseDate() {
         return mReleaseDate;
     }
+
 }
